@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'munkey';
-	src:url('fonts/munkey.eot?-yiloxz');
-	src:url('fonts/munkey.eot?#iefix-yiloxz') format('embedded-opentype'),
-		url('fonts/munkey.woff?-yiloxz') format('woff'),
-		url('fonts/munkey.ttf?-yiloxz') format('truetype'),
-		url('fonts/munkey.svg?-yiloxz#munkey') format('svg');
+	src:url('../fonts/munkey.eot?-24xjb0');
+	src:url('../fonts/munkey.eot?#iefix-24xjb0') format('embedded-opentype'),
+		url('../fonts/munkey.woff?-24xjb0') format('woff'),
+		url('../fonts/munkey.ttf?-24xjb0') format('truetype'),
+		url('../fonts/munkey.svg?-24xjb0#munkey') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -75,23 +75,23 @@
 	content: "\e60c";
 }
 
-.m-circle:before {
+.m-circle-down:before {
 	content: "\e60d";
 }
 
-.m-circle-down:before {
+.m-circle-left:before {
 	content: "\e60e";
 }
 
-.m-circle-left:before {
+.m-circle-right:before {
 	content: "\e60f";
 }
 
-.m-circle-right:before {
+.m-circle-up:before {
 	content: "\e610";
 }
 
-.m-circle-up:before {
+.m-circle:before {
 	content: "\e611";
 }
 
@@ -167,15 +167,15 @@
 	content: "\e623";
 }
 
-.m-files:before {
+.m-file-swf:before {
 	content: "\e624";
 }
 
-.m-file-swf:before {
+.m-file-text:before {
 	content: "\e625";
 }
 
-.m-file-text:before {
+.m-files:before {
 	content: "\e626";
 }
 
@@ -183,11 +183,11 @@
 	content: "\e627";
 }
 
-.m-folder:before {
+.m-folder-open:before {
 	content: "\e628";
 }
 
-.m-folder-open:before {
+.m-folder:before {
 	content: "\e629";
 }
 
