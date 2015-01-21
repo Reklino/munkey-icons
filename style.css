@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'munkey';
-	src:url('fonts/munkey.eot?-yiloxz');
-	src:url('fonts/munkey.eot?#iefix-yiloxz') format('embedded-opentype'),
-		url('fonts/munkey.woff?-yiloxz') format('woff'),
-		url('fonts/munkey.ttf?-yiloxz') format('truetype'),
-		url('fonts/munkey.svg?-yiloxz#munkey') format('svg');
+	src:url('fonts/munkey.eot?-427cxl');
+	src:url('fonts/munkey.eot?#iefix-427cxl') format('embedded-opentype'),
+		url('fonts/munkey.woff?-427cxl') format('woff'),
+		url('fonts/munkey.ttf?-427cxl') format('truetype'),
+		url('fonts/munkey.svg?-427cxl#munkey') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,263 +23,255 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.m-arrow-down:before {
+.m-mki_arrow-down:before {
 	content: "\e600";
 }
 
-.m-arrow-left:before {
+.m-mki_arrow-left:before {
 	content: "\e601";
 }
 
-.m-arrow-right:before {
+.m-mki_arrow-right:before {
 	content: "\e602";
 }
 
-.m-arrow-up:before {
+.m-mki_arrow-up:before {
 	content: "\e603";
 }
 
-.m-bell:before {
+.m-mki_bell:before {
 	content: "\e604";
 }
 
-.m-book:before {
+.m-mki_book:before {
 	content: "\e605";
 }
 
-.m-brush:before {
+.m-mki_brush:before {
 	content: "\e606";
 }
 
-.m-bug:before {
+.m-mki_bug:before {
 	content: "\e607";
 }
 
-.m-caret-down:before {
+.m-mki_caret-down:before {
 	content: "\e608";
 }
 
-.m-caret-left:before {
+.m-mki_caret-left:before {
 	content: "\e609";
 }
 
-.m-caret-right:before {
+.m-mki_caret-right:before {
 	content: "\e60a";
 }
 
-.m-caret-up:before {
+.m-mki_caret-up:before {
 	content: "\e60b";
 }
 
-.m-check:before {
+.m-mki_check:before {
 	content: "\e60c";
 }
 
-.m-circle:before {
+.m-mki_circle-down:before {
 	content: "\e60d";
 }
 
-.m-circle-down:before {
+.m-mki_circle-left:before {
 	content: "\e60e";
 }
 
-.m-circle-left:before {
+.m-mki_circle-right:before {
 	content: "\e60f";
 }
 
-.m-circle-right:before {
+.m-mki_circle-up:before {
 	content: "\e610";
 }
 
-.m-circle-up:before {
+.m-mki_circle:before {
 	content: "\e611";
 }
 
-.m-clock:before {
+.m-mki_clock:before {
 	content: "\e612";
 }
 
-.m-code:before {
+.m-mki_code:before {
 	content: "\e613";
 }
 
-.m-contract:before {
+.m-mki_contract:before {
 	content: "\e614";
 }
 
-.m-copy:before {
+.m-mki_copy:before {
 	content: "\e615";
 }
 
-.m-desktop:before {
+.m-mki_desktop:before {
 	content: "\e616";
 }
 
-.m-download:before {
+.m-mki_download:before {
 	content: "\e617";
 }
 
-.m-ellipsis:before {
+.m-mki_ellipsis:before {
 	content: "\e618";
 }
 
-.m-enter:before {
+.m-mki_enter:before {
 	content: "\e619";
 }
 
-.m-expand:before {
+.m-mki_expand:before {
 	content: "\e61a";
 }
 
-.m-eye:before {
+.m-mki_eye:before {
 	content: "\e61b";
 }
 
-.m-file-code:before {
+.m-mki_file-code:before {
 	content: "\e61c";
 }
 
-.m-file-copy:before {
+.m-mki_file-copy:before {
 	content: "\e61d";
 }
 
-.m-file-css:before {
+.m-mki_file-css:before {
 	content: "\e61e";
 }
 
-.m-file-html:before {
+.m-mki_file-html:before {
 	content: "\e61f";
 }
 
-.m-file-image:before {
+.m-mki_file-js:before {
 	content: "\e620";
 }
 
-.m-file-js:before {
+.m-mki_file-php:before {
 	content: "\e621";
 }
 
-.m-file-php:before {
+.m-mki_file-psd:before {
 	content: "\e622";
 }
 
-.m-file-psd:before {
+.m-mki_file-swf:before {
 	content: "\e623";
 }
 
-.m-files:before {
+.m-mki_file-text:before {
 	content: "\e624";
 }
 
-.m-file-swf:before {
+.m-mki_files:before {
 	content: "\e625";
 }
 
-.m-file-text:before {
+.m-mki_flask:before {
 	content: "\e626";
 }
 
-.m-flask:before {
+.m-mki_folder-open:before {
 	content: "\e627";
 }
 
-.m-folder:before {
+.m-mki_folder:before {
 	content: "\e628";
 }
 
-.m-folder-open:before {
+.m-mki_form:before {
 	content: "\e629";
 }
 
-.m-form:before {
+.m-mki_gear:before {
 	content: "\e62a";
 }
 
-.m-gear:before {
+.m-mki_graph:before {
 	content: "\e62b";
 }
 
-.m-graph:before {
+.m-mki_group:before {
 	content: "\e62c";
 }
 
-.m-group:before {
+.m-mki_help:before {
 	content: "\e62d";
 }
 
-.m-height:before {
+.m-mki_info:before {
 	content: "\e62e";
 }
 
-.m-help:before {
+.m-mki_link:before {
 	content: "\e62f";
 }
 
-.m-info:before {
+.m-mki_lock:before {
 	content: "\e630";
 }
 
-.m-link:before {
+.m-mki_moon:before {
 	content: "\e631";
 }
 
-.m-lock:before {
+.m-mki_munkey:before {
 	content: "\e632";
 }
 
-.m-moon:before {
+.m-mki_phone:before {
 	content: "\e633";
 }
 
-.m-munkey:before {
+.m-mki_photo:before {
 	content: "\e634";
 }
 
-.m-phone:before {
+.m-mki_pop-out:before {
 	content: "\e635";
 }
 
-.m-photo:before {
+.m-mki_puzzle:before {
 	content: "\e636";
 }
 
-.m-pop-out:before {
+.m-mki_refresh:before {
 	content: "\e637";
 }
 
-.m-puzzle:before {
+.m-mki_search:before {
 	content: "\e638";
 }
 
-.m-refresh:before {
+.m-mki_squares:before {
 	content: "\e639";
 }
 
-.m-search:before {
+.m-mki_sun:before {
 	content: "\e63a";
 }
 
-.m-squares:before {
+.m-mki_template:before {
 	content: "\e63b";
 }
 
-.m-sun:before {
+.m-mki_times:before {
 	content: "\e63c";
 }
 
-.m-template:before {
+.m-mki_trash:before {
 	content: "\e63d";
 }
 
-.m-times:before {
+.m-mki_warning:before {
 	content: "\e63e";
-}
-
-.m-trash:before {
-	content: "\e63f";
-}
-
-.m-warning:before {
-	content: "\e640";
 }
 

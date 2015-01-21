@@ -1,0 +1,175 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "grids";
+
+
+/*==============================
+=            Colors            =
+==============================*/
+
+$bg: #ffffff;
+$body: #333841;
+$primary: #87bc29;
+
+/*-----  End of Colors  ------*/
+
+
+
+
+/*============================
+=            Base            =
+============================*/
+
+body {
+	background: $bg;
+}
+
+/*-----  End of Base  ------*/
+
+
+
+
+/*==================================
+=            Typography            =
+==================================*/
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	color: $body;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.m-lg { font-size: 150%; }
+.m-2x { font-size: 200%; }
+.m-3x { font-size: 300%; }
+.m-4x { font-size: 400%; }
+.m-5x { font-size: 500%; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 { font-size: 4em;	margin: 0 0 1em; }
+h2 { font-size: 3.5em;	margin: 0 0 1em; }
+h3 { font-size: 3em;	margin: 0 0 1em; }
+h4 { font-size: 2em;	margin: 0 0 1em; }
+h5 { font-size: 1.5em;	margin: 0 0 1em; }
+h6 { font-size: 1em;	margin: 0 0 1em; }
+
+@media (min-width: 800px) {
+	h1 { font-size: 5em;	margin: 0 0 1em; }
+	h2 { font-size: 4em;	margin: 0 0 1em; }
+	h3 { font-size: 3em;	margin: 0 0 1em; }
+	h4 { font-size: 2em;	margin: 0 0 1em; }
+	h5 { font-size: 1.5em;	margin: 0 0 1em; }
+	h6 { font-size: 1em;	margin: 0 0 1em; }
+}
+
+p {
+	line-height: 1.5em;
+	margin: 0 0 2em;
+}
+
+.sub {
+	font-size: 80%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+/*-----  End of Typography  ------*/
+
+
+
+/*==============================
+=            Header            =
+==============================*/
+
+header {
+	@include container;
+	text-align: center;
+	padding: 4em 3em;
+	ul:after {
+		content:' ';
+		display: block;
+		clear: both;
+		padding: 1em 0;
+	}
+	li {
+		float: left;
+		padding: .5em;
+	}
+}
+
+/*-----  End of Header  ------*/
+
+
+
+/*============================
+=            Main            =
+============================*/
+
+main {
+	@include container;
+	padding: 2em 0; margin: 0 auto;
+	ul {
+		padding: 0; margin: 0;
+	}
+	ul:after {
+		content:' ';
+		display: block;
+		clear: both;
+	}
+
+	li {
+		@include span(6 of 12);
+		@include transition;
+		@include transition-property(color, transform);
+		@include box-sizing(border-box);
+		display: block;
+		padding: 1em;
+		float: left;
+		text-align: center;
+		p {
+			font-size: 18px;
+			color: #aaa;
+			margin-top: 1em;
+		}
+		span {
+			font-size: 3em;
+		}
+		&:hover {
+			@include transform(scale(1.15,1.15));
+			p, span {
+				color: $primary;
+			}
+		}
+	}
+	@media (min-width: 800px) {
+		li {
+			@include span(3 of 12);
+		}
+	}
+}
+
+/*-----  End of Main  ------*/
+
+
+
+/*==============================
+=            Footer            =
+==============================*/
+
+footer {
+	@include container;
+	padding: 2em;
+	text-align: center;
+}
+
+/*-----  End of Footer  ------*/
+
+
+
+
