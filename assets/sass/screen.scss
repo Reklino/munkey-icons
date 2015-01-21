@@ -83,6 +83,32 @@ p {
 
 
 
+/*============================================
+=            Components & Helpers            =
+============================================*/
+
+.btn {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	line-height: 60px;
+	background: $primary;
+	padding: 0 1.5em;
+	width: auto;
+	border: 1px solid darken($primary, 10);
+	@include border-radius;
+}
+
+.pull-right {
+	float: right;
+}
+
+/*-----  End of Components & Helpers  ------*/
+
+
+
+
+
 /*==============================
 =            Header            =
 ==============================*/
@@ -110,10 +136,12 @@ header {
 /*============================
 =            Main            =
 ============================*/
-
-main {
+section {
 	@include container;
 	padding: 2em 0; margin: 0 auto;
+}
+
+#the-icons {
 	ul {
 		padding: 0; margin: 0;
 	}

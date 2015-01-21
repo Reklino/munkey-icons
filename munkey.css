@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'munkey';
-	src:url('../fonts/munkey.eot?-427cxl');
-	src:url('../fonts/munkey.eot?#iefix-427cxl') format('embedded-opentype'),
-		url('../fonts/munkey.woff?-427cxl') format('woff'),
-		url('../fonts/munkey.ttf?-427cxl') format('truetype'),
-		url('../fonts/munkey.svg?-427cxl#munkey') format('svg');
+	src:url('fonts/munkey.eot?-427cxl');
+	src:url('fonts/munkey.eot?#iefix-427cxl') format('embedded-opentype'),
+		url('fonts/munkey.woff?-427cxl') format('woff'),
+		url('fonts/munkey.ttf?-427cxl') format('truetype'),
+		url('fonts/munkey.svg?-427cxl#munkey') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

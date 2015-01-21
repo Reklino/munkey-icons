@@ -12,36 +12,49 @@
 </head>
 <body ng-controller="main">
 
-	<header>
-
-		<span class="m-munkey m-4x"></span>
-
-		<h1>Munkey Icons</h1>
-
-		<p class="sub">Made simple, so that munkies can use it.</p>
-
-		<ul>
-		    <li ng-repeat="icon in icons">
-		    	<span class="{{ icon.properties.name }}  m-lg" ng-class="{{ icon.properties.name }}"></span>
-		    </li>
-		</ul>
-
-		<p>Munkey Icons are free for personal or commercial use. I plan to update them regularly since they are part of my personal arsenal. Feel free to use them in any project you wish. I'd love to see them in action if you.</p>
-
-	</header>
-
 	<main>
-		<ul>
-		    <li ng-repeat="icon in icons">
-		    	<span class="{{ icon.properties.name }}" ng-class="{{ icon.properties.name }}"></span>
-		    	<p>{{ icon.properties.name }}</p>
-		    </li>
-		</ul>
+
+		<header>
+
+			<span class="m-munkey m-4x"></span>
+
+			<h1>Munkey Icons</h1>
+
+			<p class="sub">Made simple, so that munkies can use it.</p>
+
+			<p>Munkey Icons are free for personal or commercial use. I plan to update them regularly since they are part of my personal arsenal. Feel free to use them in any project you wish. I'd love to see them in action if you.</p>
+
+		</header>
+
+		<section id="the-icons">
+			<ul>
+			    <li ng-repeat="icon in icons">
+			    	<span class="{{ icon.properties.name }}" ng-class="{{ icon.properties.name }}"></span>
+			    	<p>{{ icon.properties.name }}</p>
+			    </li>
+			</ul>
+		</section>
+
+		<section id="how-to-use">
+			<p>
+				To use the icons, unzip them into your project, and load the css file by entering this into the head of your index file:
+				<input type="text" ng-model="code" />
+			</p>
+			<a class="btn pull-right" href="#">Download Munkies <span class="m-arrow-down m-lg"></span></a>
+			
+		</section>
+
+		<section id="thanks">
+
+		</section>
+
+		<footer>
+			<p class="sub">Created by Reklino</p>
+		</footer>
+
 	</main>
 
-	<footer>
-		<p class="sub">Created by Reklino</p>
-	</footer>
+	
 
 </body>
 </html>

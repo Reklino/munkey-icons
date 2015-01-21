@@ -206,10 +206,34 @@ p {
 }
 
 /*-----  End of Typography  ------*/
+/*============================================
+=            Components & Helpers            =
+============================================*/
+/* line 90, ../sass/screen.scss */
+.btn {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  line-height: 60px;
+  background: #87bc29;
+  padding: 0 1.5em;
+  width: auto;
+  border: 1px solid #699220;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 102, ../sass/screen.scss */
+.pull-right {
+  float: right;
+}
+
+/*-----  End of Components & Helpers  ------*/
 /*==============================
 =            Header            =
 ==============================*/
-/* line 90, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 header {
   max-width: 800px;
   margin-left: auto;
@@ -223,14 +247,14 @@ header:after {
   display: block;
   clear: both;
 }
-/* line 94, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 header ul:after {
   content: ' ';
   display: block;
   clear: both;
   padding: 1em 0;
 }
-/* line 100, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 header li {
   float: left;
   padding: .5em;
@@ -240,8 +264,8 @@ header li {
 /*============================
 =            Main            =
 ============================*/
-/* line 114, ../sass/screen.scss */
-main {
+/* line 139, ../sass/screen.scss */
+section {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -249,24 +273,25 @@ main {
   margin: 0 auto;
 }
 /* line 12, ../../../../../../Library/Ruby/Gems/1.8/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-main:after {
+section:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 117, ../sass/screen.scss */
-main ul {
+
+/* line 145, ../sass/screen.scss */
+#the-icons ul {
   padding: 0;
   margin: 0;
 }
-/* line 120, ../sass/screen.scss */
-main ul:after {
+/* line 148, ../sass/screen.scss */
+#the-icons ul:after {
   content: ' ';
   display: block;
   clear: both;
 }
-/* line 126, ../sass/screen.scss */
-main li {
+/* line 154, ../sass/screen.scss */
+#the-icons li {
   width: 50%;
   float: left;
   -moz-transition: all 1s;
@@ -285,30 +310,30 @@ main li {
   float: left;
   text-align: center;
 }
-/* line 135, ../sass/screen.scss */
-main li p {
+/* line 163, ../sass/screen.scss */
+#the-icons li p {
   font-size: 18px;
   color: #aaa;
   margin-top: 1em;
 }
-/* line 140, ../sass/screen.scss */
-main li span {
+/* line 168, ../sass/screen.scss */
+#the-icons li span {
   font-size: 3em;
 }
-/* line 143, ../sass/screen.scss */
-main li:hover {
+/* line 171, ../sass/screen.scss */
+#the-icons li:hover {
   -moz-transform: scale(1.15, 1.15);
   -ms-transform: scale(1.15, 1.15);
   -webkit-transform: scale(1.15, 1.15);
   transform: scale(1.15, 1.15);
 }
-/* line 145, ../sass/screen.scss */
-main li:hover p, main li:hover span {
+/* line 173, ../sass/screen.scss */
+#the-icons li:hover p, #the-icons li:hover span {
   color: #87bc29;
 }
 @media (min-width: 800px) {
-  /* line 151, ../sass/screen.scss */
-  main li {
+  /* line 179, ../sass/screen.scss */
+  #the-icons li {
     width: 25%;
     float: left;
   }
@@ -318,7 +343,7 @@ main li:hover p, main li:hover span {
 /*==============================
 =            Footer            =
 ==============================*/
-/* line 165, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 footer {
   max-width: 800px;
   margin-left: auto;

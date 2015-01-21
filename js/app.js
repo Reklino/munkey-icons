@@ -1,5 +1,7 @@
 angular.module('app', [])
 	.controller('main', ['$scope', function($scope){
+
+		$scope.code = '<link rel="stylesheet" type="text/css" href="munkey.css">'
 		
 		$scope.icons = [
 		{
