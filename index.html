@@ -1,55 +1,83 @@
 <html ng-app="app">
 <head>
-	<title>Munkey Icons</title>
+	<title>Munkey icons</title>
 
 	<link rel="stylesheet" type="text/css" href="munkey.css">
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/screen.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Raleway:100' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700|Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.9/angular.min.js"></script>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-highlightjs/angular-highlightjs.min.js"></script>
+	<script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
 	<script src="js/app.js"></script>
 
 </head>
 <body ng-controller="main">
 
+	<nav>
+		<ul>
+			<li><span class="m-munkey"></span><a href="#hey" du-smooth-scroll>Hey!</a></li>
+			<li><span class="m-squares"></span><a href="#the-icons" du-smooth-scroll>The Icons</a></li>
+			<li><span class="m-code"></span><a href="#how-to-use" du-smooth-scroll>How to use</a></li>
+			<li><span class="m-info"></span><a href="#thanks" du-smooth-scroll>Thanks!</a></li>
+		</ul>
+	</nav>
+
+	<div id="buttons">
+		<input type="range" ng-model="size" min="28" max="150"/>
+	</div>
+
 	<main>
 
-		<header>
+		<header id="hey">
 
-			<span class="m-munkey m-4x"></span>
-
-			<h1>Munkey Icons</h1>
-
-			<p class="sub">Made simple, so that munkies can use it.</p>
-
-			<p>Munkey Icons are free for personal or commercial use. I plan to update them regularly since they are part of my personal arsenal. Feel free to use them in any project you wish. I'd love to see them in action if you.</p>
+			<div class="col-12">
+				<h2>Munkey icons</h2>
+				<h6 class="sub">Made simple, so that munkies can use em'.</h6>
+				<br><br>
+			</div>
 
 		</header>
 
 		<section id="the-icons">
 			<ul>
-			    <li ng-repeat="icon in icons">
-			    	<span class="{{ icon.properties.name }}" ng-class="{{ icon.properties.name }}"></span>
+			    <li ng-repeat="icon in icons" class="col-2">
+			    	<span class="{{ icon.properties.name }}" ng-style="{ 'font-size' : size + 'px' }"></span>
 			    	<p>{{ icon.properties.name }}</p>
 			    </li>
 			</ul>
 		</section>
 
 		<section id="how-to-use">
-			<p>
-				To use the icons, unzip them into your project, and load the css file by entering this into the head of your index file:
-				<input type="text" ng-model="code" />
-			</p>
-			<a class="btn pull-right" href="#">Download Munkies <span class="m-arrow-down m-lg"></span></a>
+
+			<div class="col-12">
+				<p>
+					To test the icons, or play with them in development, paste this in your head tags:
+					<div hljs><link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/Reklino/munkey-icons/master/css/munkey.css"></div>
+				</p>
+				<p>
+					To use the icons, unzip them into your project, and load the css file by entering this into the head of your index file:
+					<div hljs source="code"></div>
+				</p>
+				<a class="btn" href="#">Download Munkies<span class="m-download m-lg"></span></a>
+			</div>
 			
 		</section>
 
 		<section id="thanks">
-
+			<div class="col-12">
+				<p>Font files generated using Icomoon (which is awesome).</p>
+				<p>Hosted via github.</p>
+			</div>
 		</section>
 
 		<footer>
-			<p class="sub">Created by Reklino</p>
+			<div class="col-12">
+				<p class="sub">Created by Reklino</p>
+			</div>
 		</footer>
 
 	</main>

@@ -1,7 +1,8 @@
-angular.module('app', [])
+angular.module('app', ['hljs', 'duScroll'])
 	.controller('main', ['$scope', function($scope){
 
-		$scope.code = '<link rel="stylesheet" type="text/css" href="munkey.css">'
+		$scope.code = '<link rel="stylesheet" type="text/css" href="munkey.css">';
+		$scope.size = 56;
 		
 		$scope.icons = [
 		{

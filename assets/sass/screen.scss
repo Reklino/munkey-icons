@@ -4,14 +4,18 @@
 
 
 /*==============================
-=            Colors            =
+=            Vars            =
 ==============================*/
 
 $bg: #ffffff;
-$body: #333841;
+$light: #F8F8F8;
+$body: #414752;
 $primary: #87bc29;
 
-/*-----  End of Colors  ------*/
+$default-transition-duration: 0.3s;
+$default-transition-function: ease-in-out;
+
+/*-----  End of Vars  ------*/
 
 
 
@@ -20,8 +24,18 @@ $primary: #87bc29;
 =            Base            =
 ============================*/
 
+body, html {
+	height: 100%;
+}
+
+body, *, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
 body {
 	background: $bg;
+	@include box-sizing(border-box);
+	padding-left: 250px;
 }
 
 /*-----  End of Base  ------*/
@@ -39,7 +53,7 @@ body {
 	text-rendering: optimizeLegibility;
 	color: $body;
 	font-size: 18px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Inconsolata', sans-serif;
 }
 
 .m-lg { font-size: 150%; }
@@ -49,7 +63,8 @@ body {
 .m-5x { font-size: 500%; }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-family: 'Libre Baskerville', serif;
 }
 
 h1 { font-size: 4em;	margin: 0 0 1em; }
@@ -74,7 +89,7 @@ p {
 }
 
 .sub {
-	font-size: 80%;
+	font-family: 'Inconsolata', sans-serif;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
@@ -89,22 +104,85 @@ p {
 
 .btn {
 	display: inline-block;
-	color: white;
+	color: $body;
 	text-decoration: none;
 	line-height: 60px;
-	background: $primary;
+	background: $bg;
 	padding: 0 1.5em;
 	width: auto;
-	border: 1px solid darken($primary, 10);
-	@include border-radius;
+	border: 1px solid $body;
+	span {
+		position: relative;
+		margin-left: 1em;
+		top: 0.175em;
+	}
+}
+
+input {
+	display: block;
+	width: 100%;
+	font-family: 'Inconsolata', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	@include box-sizing(border-box);
+	padding-top: 10px;
+	height: 60px;
+	background: white;
+	border: 1px solid #eee;
+	border-width: 0 0 3px 0;
 }
 
 .pull-right {
 	float: right;
 }
 
+#buttons {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	height: 60px;
+	background: rgba(255, 255, 255, 0.5);
+	z-index: 100;
+}
+
 /*-----  End of Components & Helpers  ------*/
 
+
+/*===========================
+=            Nav            =
+===========================*/
+
+nav {
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 250px;
+	background: $light;
+	ul {
+		position: absolute;
+		top: 50%;
+		margin-top: -120px;
+	}
+	li {
+		display: block;
+		width: 250px;
+		line-height: 60px;
+		padding-left: 2em;
+		span {
+			font-size: 28px;
+			margin-right: 1em;
+			position: relative;
+			top: 0.25em;
+		}
+		a {
+			color: $body;
+			text-decoration: none;
+		}
+	}
+}
+
+/*-----  End of Nav  ------*/
 
 
 
@@ -115,18 +193,8 @@ p {
 
 header {
 	@include container;
-	text-align: center;
-	padding: 4em 3em;
-	ul:after {
-		content:' ';
-		display: block;
-		clear: both;
-		padding: 1em 0;
-	}
-	li {
-		float: left;
-		padding: .5em;
-	}
+	text-align: left;
+	padding: 4em 3em 2em;
 }
 
 /*-----  End of Header  ------*/
@@ -138,7 +206,7 @@ header {
 ============================*/
 section {
 	@include container;
-	padding: 2em 0; margin: 0 auto;
+	padding: 2em 3em; margin: 0 auto;
 }
 
 #the-icons {
@@ -152,34 +220,37 @@ section {
 	}
 
 	li {
-		@include span(6 of 12);
 		@include transition;
 		@include transition-property(color, transform);
-		@include box-sizing(border-box);
 		display: block;
-		padding: 1em;
 		float: left;
 		text-align: center;
 		p {
-			font-size: 18px;
-			color: #aaa;
+			font-size: 14px;
+			color: $body;
 			margin-top: 1em;
+			white-space: nowrap;
 		}
 		span {
 			font-size: 3em;
 		}
 		&:hover {
-			@include transform(scale(1.15,1.15));
-			p, span {
+			p {
 				color: $primary;
 			}
+
 		}
 	}
-	@media (min-width: 800px) {
+
+	@media (min-width: 1600px) {
 		li {
-			@include span(3 of 12);
+			p { font-size: 18px; }
 		}
 	}
+}
+
+#how-to-use {
+	text-align: left;
 }
 
 /*-----  End of Main  ------*/
@@ -192,8 +263,8 @@ section {
 
 footer {
 	@include container;
-	padding: 2em;
-	text-align: center;
+	padding: 2em 3em;
+	text-align: left;
 }
 
 /*-----  End of Footer  ------*/

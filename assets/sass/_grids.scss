@@ -5,6 +5,21 @@
 
 $susy: (
   columns: 12,
-  gutters: 0,
-  container: 800px
+  gutters: 1/2,
+  gutter-position: inside,
+  container: auto,
+  global-box-sizing: border-box
 );
+
+.col-1 {	@include span(1 of 12);		}
+.col-2 {	@include span(2 of 12);		}
+.col-3 {	@include span(3 of 12);		}
+.col-4 {	@include span(4 of 12);		}
+.col-5 {	@include span(5 of 12);		}
+.col-6 {	@include span(6 of 12);		}
+.col-7 {	@include span(7 of 12);		}
+.col-8 {	@include span(8 of 12);		}
+.col-9 {	@include span(9 of 12);		}
+.col-10 {	@include span(10 of 12);	}
+.col-11 {	@include span(11 of 12);	}
+.col-12 {	@include span(12 of 12);	}

@@ -1,0 +1,23 @@
+{
+  "name": "munkey-icons",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Reklino/munkey-icons",
+  "authors": [
+    "Reklino <yakub89@gmail.com>"
+  ],
+  "description": "Simple icons... for munkies.",
+  "keywords": [
+    "icons",
+    "simple",
+    "line",
+    "munkey"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
